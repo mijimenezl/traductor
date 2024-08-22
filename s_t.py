@@ -107,7 +107,7 @@ if result:
     elif out_lang == "Japonés":
         output_language = "ja"
     elif in_lang == "Hawaiano":
-        input_language = "haw"
+        output_language = "haw"
     
     english_accent = st.selectbox(
         "Selecciona el acento",
