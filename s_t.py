@@ -19,11 +19,11 @@ st.title("TRADUCTOR.")
 st.subheader("Escucho lo que quieres traducir.")
 
 
-image = Image.open('OIG7.jpg')
+image = Image.open('traductor.jpg')
 
-st.image(image,width=300)
+st.image(image,width=500)
 with st.sidebar:
-    st.subheader("Traductor.")
+    st.subheader("TRADUCTOR")
     st.write("Presiona el botón, cuando escuches la señal "
                  "habla lo que quieres traducir, luego selecciona"   
                  " la configuración de lenguaje que necesites.")
@@ -31,7 +31,7 @@ with st.sidebar:
 
 st.write("Toca el Botón y habla lo que quires traducir")
 
-stt_button = Button(label=" Escuchar  🎤", width=300,  height=50)
+stt_button = Button(label=" Escuchar  🎤", width=500,  height=50)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
